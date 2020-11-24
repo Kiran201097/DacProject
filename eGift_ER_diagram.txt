@@ -1,0 +1,50 @@
+ER diagram-
+
+	Business Entity
+		Employees
+			ID
+			Name
+			Email
+			Password
+			Phone number
+			role
+		Vendor
+			ID
+			Name
+			Address
+			Email
+			Password
+			Phone number		
+		Customer
+			ID
+			Name
+			Email
+			Password
+			Address
+			Phone number
+			Bank account
+		Product
+			ID
+			Category
+			Title
+			Price
+			Quantity
+			vendors
+			Age group
+		Order
+			Order Date
+			Customer
+			Product
+			Total Bill
+			Quantity
+		Shipment
+			Order
+			Shiping agent
+			Shiping Date
+			Status
+			
+		Payment
+			ID
+			Payment status
+			Order
+			Payment Date

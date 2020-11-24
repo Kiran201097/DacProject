@@ -1,0 +1,316 @@
+Online Application Title : E-Gift shopee
+
+purpose : 
+	The E - Gift shopee for gifts item shop. Web application is develop to provide the solutions to customers a single
+	window to purchase the different gift items of various types from different shops of vendors and also for the different
+	vendors this application provides single get way to place their product to sale on internet. The administration module
+	will enable a system administrator to approve and reject request for new shops and maintain various lists of shop category.
+              
+scope :
+	This system provides facility to customer login to application and search for the various gift items, add to cart or remove 
+        from cart and purchase the item or items with various payment options.
+           
+Definitions :
+	   SRS         --> 	Software Requirement Specification
+	   GUI         --> 	Graphical User Interface
+	   Stackholder --> 	The person who will participate in the System. And Onwer of system
+					Ex.  Customer, Vendor, Administration
+ 	   SSL         -->	Secure Socket Layer used for providing restricted access to application.
+           RDBMS       -->	Relational Dadabase Management System.
+	   CLUSTERS    --> 	Group of independent servers.	
+
+Overview :
+	This System provides an easy solution to customer's to buy the product without going to the shop physically and also shop 
+	owner to sale their products online.
+        
+Additional Information :
+	The system work on internet server, so it will be operated by any end user for the buying purpose with secure platform.
+        This system protects the integrity of the sellers and buyers, provides easy return's, buying policies and offers.
+        
+General Description :
+	The application helps to manage the items in the vendors carts and also helps customers to purchase.
+	The online system will use the internet as the sole method for selling goods to its consumers.
+	
+Functional Requirement :
+	This section provides requirement overview of the system. Various functional modules that can be implemented by 
+	the system will be-
+	
+	Description:
+		Registration if customer wants to buy the product then he/she must be registered, Unregistered user can not get to 
+		shopping cart.
+        	Login Customer logins to the system by entering valid user id and password for shopping.
+		End User can Browse Products, their categories as well, customer can add products to wishlist.
+		Payment for customer, there are many of secure billing will be prepaid as debit or credit cart, postpaid as after 
+		shipping, check or bank draft.
+		Logout after the payment of the product the customer will logged out.
+		Report Generation after all transation the system can generate the portable file (.pdf) then sent one copy to 
+		customer's Email- address and another one for the system database to calculate the monthly transaction.
+        	The term client/server refers primarily to an architecture or logical division of responsibilities, the client is the 
+		application (also known as the front-end), and the server is the RDBMS (also known as the back-end).
+        	A client/server system is a distributed system in which, Some sites are client sites and others are server sites.
+        	All the data resides at the server sites.
+        	All applications execute at the client sites.
+
+Technical Issues :
+	This system will work on client-Server architecture. It will require an internet server.
+	The system should support some commonly used browser such as Google Chrome, Mozilla firefox etc.
+	Interface Requirement Various interfaces for the product could be 
+	1.Login Page, 
+	2.Registration form
+    
+	There will be a screen displaying information about gift that the shop having.
+
+	The customers may select the different options which will be open in another screen as
+		1.Login Page
+		2.Registration Form
+		3.Shopping Cart 
+		4.Product Page
+                5.Shipping Details
+                6.Purchase history
+                7.Payment methods
+                8.Account Settings
+	
+Hardware Interface :
+	- The System must run over the internet,
+        - All the hardware shall require to connect to internet will be hardware interface for the system.
+		e.g. modem, WAN, LAN
+		Specialized Server Infrastructure Hardware
+        - The system should use distributed servers i.e cloud for managing large amount of data so as to make it appear as single unit 
+	  for end-user.
+        - The system should have proper clusters for backup.
+		
+Software Interface :
+	- The system is on server so it requires the any scripting language like JSP or PHP or ASP, ETC.
+        - The system should be able to exchange data using XML, JSON or any advance technology.
+	- The system require DataBase also for the store the any transaction of the system like MySql or oracle, or SQL server etc.
+	- System also require DNS (Domain Name space) for the naming on the internet.
+        - At the end-user need web browser for interact with the system.
+
+Performance Requirement :
+	There is no performance requirement in this system, because the server request and respone to client is totally based on 
+	internet connection of end user.
+
+Design Constrains :
+	This system should be developed using Standard Web Page Development Tool, which conforms GUI standards such like HTML, XML, 
+	JSON,etc.
+        The system should support various RDBMS and Cloud Technologies.
+
+Non-Functional Requirements
+
+1. Security:
+	The system use SSL (Secure Socket Layer) in all transactions that include any confidential customer information.
+	The system should not leave any cookies on the customer's computer containing users's password.
+	The system's back-end servers shall only be accessible to authenticated administrators.
+	Sensitive data will be encrypted before being sent over insecure connections like internet.
+        The proper firewalls should be developed to avoid intrusions from the internal or external sources.
+
+2. Reliability:
+	The system provides storage of all databases on redundant computers with automatic switchover. 
+	The main pillar of reliability of the system is the backup of the database which is continously maintained and update to 
+	reflect the most recent changes.
+
+3. Availability:
+	The system should be available at all times meaning the user can access it using web browser, only restricted by the down 
+	time of the server on which the system runs.
+        In case of a of a hardware failure or database corruption, a replacement page will be shown. 
+	uptime : It mean 24 * 7 availability
+
+4. Maintainability:
+	A commercial database is used for maintaining the database and application server takes care of the site. 
+	The maintainability can be done efficiently.
+
+5. Portability:
+	The application is HTML and scripting language based (Javascript). So the end user part is fully portable and any system 
+	using any web browser should be able to use the features of the system, including any hardware platform that is available 
+	or will be available in the future. 
+	An end-user is used this system on an OS like Windows.
+	The system shall run on PC, Laptops and PDA.etc.
+	The technology should be transferable to different environments easily.
+
+6. Accessibility:
+        Only registered users should be allowed to process the orders after authentications.
+        Only GUI access of the system should be permited to end users.
+
+7. Policies:
+        The system should adhere to all the legal formalities of the particular countries.
+        The system should maintain security related to sensitive data.
+
+8. Efficiency:
+	The system should provide good response to multiple users without burdening the system by using appropriate 
+	number of servers.
+
+9. Safety:
+        Software should not harm ethical and environmental conditions of the end users machine.
+
+10. Modularity:
+        The system should have user friendly interface. 
+        It should be easily updated, modified and reused. 
+
+Operational Scenario :
+	Customer Interaction
+
+	The customer want to buy item. The system shows all product categories to customer. If customer select item then those items
+	are listed in shoppingcart for buying. The payment will be made with credit card or debit card. If customer wants to cancel 
+	the order before shopping then he or she can cancel it. Customer can see the buying report on account details. Customer will 
+	receive email about purchase done.
+	
+Preliminary Schedule :
+	
+	1.Create new account
+	2.Login
+	3.Manage customer database Browse category
+	4.add or remove item from cart
+	5.update item category
+	6.approve/reject shop creation of vendors
+	7.shipping order
+	8.Logout
+	9.Give feedback
+	10.payment methods
+	11.View account details
+	12.Cancel order before shipping
+        13.Order tracking
+        14.Return Policies
+        15.Customer Support
+        
+Advantages:
+	   1) Convenience: 
+			  Where else can you do shopping even a midnight wearing your night suit? You do not have to wait in a line or wait till the shop assistant is ready to help you with your purchases. 
+			  You can do your shopping in minutes even if you are busy apart from saving time and avoiding crowds. Online shops give us the opportunity to shop 24 x 7 and also reward us with a ‘no pollution’ shopping. 
+	                  There is no better place to buy information products like e-books. Immediately after the payment is made one can download the information. 
+			  And downloadable items purchased online eliminate the need for any kind of material goods at all.
+
+	   2) Better Prices: 
+			  We can get Products at cheap deals and better prices.
+			  Products come to you direct from the manufacturer or seller without middlemen involved. 
+			  Many online shops offer discount coupons and rebates. Apart from this, the Online Store is only required to collect sales tax if they have a physical location in our state even if we buy from a store across the world.
+
+	   3) Variety: 
+			  One can get several brands and products from different sellers at one place. 
+			  You can get in on the latest international trends without spending money on airfare. 
+			  When you shop online, you can shop from retailers in other parts of the country or even the world without being limited by geographic area. 
+			  These stores offer a far greater selection of colors and sizes than you will find locally. Apart from that, How many times have it happened that you spend your money reaching a local shop only to find that the product you need is out of stock? Some online shops have a provision to accept orders without stock and ship it across to you when the stock becomes available. 
+			  You also have the option of taking your business to another online store where the product is available.
+
+	  4) Send Gifts: 
+			  Online Shopping makes sending gifts to relatives and friends easy, no matter where ever they stay. Now there is no need of making distance an excuse for not sending a gift on occasions like Birthday, Wedding Anniversary, Marriage, Valentine’s Day, Mother’s Day etc..
+
+	  5) Comparison of Prices: 
+			  Online shops make comparison and research of products and prices possible. Online stores also give you the ability to share information and reviews with other shoppers who have firsthand experience with a product or retailer.
+
+
+	  6) Buying Old or unused Stuff at low prices: 
+			  Online Shops make it possible for us to buy old or unused stuff at rock bottom prices. If we want to buy antiques there is no better options than online stores.
+
+
+This Project is based on Five Dimensions of Online Buying Experience Tracked by Gomez(Advisors), which are: [7]
+
+		1>Web Site Usability (EASE)
+
+		2>On-site Resources (SELECTION)
+
+		3>Customer Confidence (TRUST)
+
+		4>Relationship Services (REL)
+
+		5>Price Leadership (COST)
+
+
+
+Product Categories Section:
+
+This will be a domestic website having multiple products related to different industries e.g.
+
+Fashion
+
+Dresses
+
+Jewelry
+
+Bags
+
+Shoes
+
+Art
+
+Portraits
+
+Sceneries
+
+Eatables
+
+Chocolates
+
+Cosmetics
+
+Makeup
+
+Perfumes
+
+Wrapping Material
+
+Glossy Papers
+
+Cards
+
+Wrapping Types
+
+Cash Gift Coupons
+
+(Note: Products will also be filtered based on the different occasions)
+
+Products Filtration
+
+Following events sections will be included to narrow down the customers search based on the events:
+
+	Birthday
+	Wedding
+	Christmas
+	Thanksgiving
+	Valentine’s Day
+
+AGE GROUPS :
+
+	15-20
+	21-30
+	31-45
+	45-55
+	Other: ______________
+
+GENDER : 
+	MALE
+	FEMALE
+	Other
+
+Website user will perform the following steps:
+
+		1)Sign up for an Account :
+					  i>Login
+					  ii>Manage customer database Browse category
+
+		2)Select product:
+					  i>add or remove item from cart
+            				  ii>Manage customer database	  	
+
+		3)Select Wrapping Material:
+					  i>Add different product as well as Wrapping Material for decoration of gift
+					  ii>approve/reject shop creation
+
+		4)Enter Source and Destination (This will also include sender and receiver emails):
+					  i>Shipping Details
+
+		5)Enter Payment Details:
+					  i>ByCreditCart By Debit Card
+					  ii>Online Banking/UPI
+					  iii>Cash on Delivary
+
+Customers can also cancle the order :
+				     i>If cancle before shipping will get full refund
+				     ii>Shipping charges will be deducted if cancle after the product shipment
+				     
+This project also provides facility of product replacement in case of any damage at the time of dilivery.
+
+
+
+Reminders Section:
+		  Reminders for various events will also be sent to the members of Grab N Wrap. This will help the member in deciding about the gift items and necessary arrangements in advance.
+
